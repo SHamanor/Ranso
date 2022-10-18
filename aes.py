@@ -61,6 +61,5 @@ def getKey(password):
     hasher = SHA256.new(password)
     return hasher.digest()
 
-
 # if __name__ == "__main__":
 #     main.Main()

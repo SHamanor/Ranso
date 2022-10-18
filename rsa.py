@@ -37,6 +37,7 @@ public_key_file = open("public_key_str.pem", "w")
 public_key_file.write(pem_public_key.decode())
 public_key_file.close()
 
+
 # public_key_file = open("public_key_str.pem", "rb")
 # public_key_file = public_key_file.readlines()
 # mytext = ""
