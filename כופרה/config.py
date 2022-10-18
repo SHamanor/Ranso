@@ -27,7 +27,7 @@ def gen():
     
     recipient_key = RSA.import_key(public_key)
     encryptorRSA = PKCS1_OAEP.new(recipient_key)
-    enckey=encryptorRSA.encrypt(password)
+    enckey=encryptorRSA.encrypt(b"password")
 
     f=open(os.environ['HOME'] +'/Desktop/','wb')
     f.write(binascii.hexlify(enckey))
